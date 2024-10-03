@@ -2,11 +2,17 @@
 <h3>Link -> https://min06150315-oss-assignment4-2.netlify.app/</h3>
 <hr>
 <h3>
-    <br>
+    React CRUD 및 REST API 프로젝트 복제(clone)<br>
+    Assignment 4-2 github classroom URL에 push<br>
+    My github repo 에 push<br>
+    Netlify에 연결(Rest API 미연결로 인해, 데이터가 나오지 않을 수 있음)<br>
+    데이터 항목 수정을 포함한 최소 6가지 이상의 Customizing을 할 것.<br>
+    UI 개선 및 데이터 항목 추가, 데이터 모델 변경 등.<br>
+    데이터 항목은 5개 이상으로 수정<br>
 </h3><br>
 # Getting Started with Create React App
 
-This project realate to react CRUD
+#This project realate to react CRUD
 
 ## How to start this project
  

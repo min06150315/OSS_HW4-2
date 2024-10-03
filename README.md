@@ -2,7 +2,7 @@
 <h3>Link -> https://min06150315-oss-assignment4-2.netlify.app/</h3>
 <hr>
 <h3>
-    React 과제 제출 연습<br>
+    <br>
 </h3><br>
 # Getting Started with Create React App
 

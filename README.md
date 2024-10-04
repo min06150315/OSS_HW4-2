@@ -9,6 +9,7 @@
     데이터 항목 수정을 포함한 최소 6가지 이상의 Customizing을 할 것.<br>
     UI 개선 및 데이터 항목 추가, 데이터 모델 변경 등.<br>
     데이터 항목은 5개 이상으로 수정<br>
+    mockAPI를 사용해 API 연결<br>
 </h3><br>
 # Getting Started with Create React App
 
@@ -18,7 +19,7 @@
  
     step 1: git clone https://github.com/bhairabpatra/crud-react-app.git
     step 2: npm i
-    step 3: json-server --watch db.json // http://localhost:3000
+    step 3: json-server --watch db.json // http://localhost:3000    
     step 4:  npm  // http://localhost:3001
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/70DgIVB7) 

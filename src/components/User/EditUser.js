@@ -82,16 +82,45 @@ const EditUser = () => {
             onChange={handelInput}
           />
         </div>
+        {/* Edit */}
         <div className="mb-3 mt-3">
-          <label htmlFor="email" className="form-label">
-            Email
+          <label htmlFor="rc" className="form-label">
+            RC
           </label>
           <input
-            type="email"
+            type="rc"
             className="form-control"
-            id="email"
-            name="email"
-            value={user.email || ''}
+            id="rc"
+            name="rc"
+            value={user.rc || ''}
+            onChange={handelInput}
+          />
+        </div>
+        {/* Edit */}
+        <div className="mb-3 mt-3">
+          <label htmlFor="major" className="form-label">
+            Major
+          </label>
+          <input
+            type="major"
+            className="form-control"
+            id="major"
+            name="major"
+            value={user.major || ''}
+            onChange={handelInput}
+          />
+        </div>
+        {/* Edit */}
+        <div className="mb-3 mt-3">
+          <label htmlFor="year" className="form-label">
+            Year
+          </label>
+          <input
+            type="year"
+            className="form-control"
+            id="year"
+            name="year"
+            value={user.year || ''}
             onChange={handelInput}
           />
         </div>

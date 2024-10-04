@@ -27,9 +27,10 @@ const User = () => {
     <div className="user mt-5">
       <table className="table table-bordered">
         <thead>
+          {/* Edit */}
           <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
+            <th>오픈소스 스튜디오</th>
+            <th>웹 서비스 개발</th>
           </tr>
         </thead>
         <tbody>
@@ -37,9 +38,20 @@ const User = () => {
             <td>Name</td>
             <td>{user.name}</td>
           </tr>
+          {/* Edit */}
           <tr>
-            <td>Email</td>
-            <td>{user.email}</td>
+            <td>RC</td>
+            <td>{user.rc}</td>
+          </tr>
+          {/* Edit */}
+          <tr>
+            <td>Major</td>
+            <td>{user.major}</td>
+          </tr>
+          {/* Edit */}
+          <tr>
+            <td>Year</td>
+            <td>{user.year}</td>
           </tr>
           <tr>
             <td>Phone</td>

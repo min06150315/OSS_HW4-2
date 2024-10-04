@@ -7,9 +7,12 @@ const CreateUser = () => {
     const createUserApi = "http://localhost:3000/user"
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    {/* Edit */}
     const [user, setUser] = useState({
         name: "",
-        email: "",
+        rc: "",
+        major: "",
+        year: "",
         phone: ""
     })
 
@@ -35,7 +38,8 @@ const CreateUser = () => {
 
             if (response.ok) {
                 console.log('Form submitted successfully!');
-                setUser({name: "",email: "",phone: ""})
+                {/* Edit */}
+                setUser({name: "",rc: "",major: "",year: "",phone: ""})
                 navigate('/show-user');
             } else {
                 console.error('Form submission failed!');
@@ -60,12 +64,24 @@ const CreateUser = () => {
                     <label for="name" className="form-label">Name</label>
                     <input type="text" className="form-control" id="name" name="name" value={user.name} onChange={handelInput} />
                 </div>
+                {/* Edit */}
                 <div className="mb-3 mt-3">
-                    <label for="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="email" name="email" value={user.email} onChange={handelInput} />
+                    <label for="rc" className="form-label">RC</label>
+                    <input type="text" className="form-control" id="rc" name="rc" value={user.rc} onChange={handelInput} />
                 </div>
+                {/* Edit */}
+                <div className="mb-3 mt-3">
+                    <label for="major" className="form-label">Major</label>
+                    <input type="text" className="form-control" id="major" name="major" value={user.major} onChange={handelInput} />
+                </div>
+                {/* Edit */}
+                <div className="mb-3 mt-3">
+                    <label for="year" className="form-label">Year</label>
+                    <input type="text" className="form-control" id="year" name="year" value={user.year} onChange={handelInput} />
+                </div>
+                {/* Edit */}
                 <div className="mb-3">
-                    <label for="pwd" className="form-label">Phone</label>
+                    <label for="phone" className="form-label">Phone</label>
                     <input type="text" className="form-control" id="phone" name="phone" value={user.phone} onChange={handelInput} />
                 </div>
                 <button type="submit" className="btn btn-primary submit-btn">Submit</button>

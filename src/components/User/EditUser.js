@@ -10,7 +10,7 @@ const EditUser = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
-  const getUserApi = "http://localhost:3000/user";
+  const getUserApi = "https://66ff38172b9aac9c997e8ee3.mockapi.io/api/users";
 
   const getUser = useCallback(() => { // useCallback 사용
     axios

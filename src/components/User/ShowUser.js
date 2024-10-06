@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import Loader from "../Common/Loader";
 
 const ShowUser = () => {
-  {/* Edit */}
   const showUserApi = "https://66ff38172b9aac9c997e8ee3.mockapi.io/api/users";
-  //const showUserApi = "http://localhost:3000/user";
   const [user, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -70,19 +68,17 @@ const ShowUser = () => {
                 <tr key={i + 1}>
                   <td>{i + 1}</td>
                   <td>{item.name}</td>
-                  {/*Edit*/}
                   <td>{item.rc}</td>
                   <td>{item.major}</td>
                   <td>{item.year}</td>
                   <td>{item.phone}</td>
-                  <td>
+                  <td style={{ display: "flex", justifyContent: "space-around" }}>
                     <Link to={`/edit-user/${item.id}`}>
                       <i className="fa fa-pencil" aria-hidden="true"></i>
                     </Link>
                     <Link to={`/user/${item.id}`}>
                       <i className="fa fa-eye" aria-hidden="true"></i>
                     </Link>
-
                     <i
                       className="fa fa-trash-o"
                       aria-hidden="true"

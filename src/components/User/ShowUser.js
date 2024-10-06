@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Loader from "../Common/Loader";
+import "./ShowUser.css"; // CSS 파일을 import
 
 const ShowUser = () => {
   const showUserApi = "https://66ff38172b9aac9c997e8ee3.mockapi.io/api/users";
@@ -58,7 +59,6 @@ const ShowUser = () => {
               <th>Major</th>
               <th>Year</th>
               <th>Phone</th>
-              <th></th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -72,7 +72,7 @@ const ShowUser = () => {
                   <td>{item.major}</td>
                   <td>{item.year}</td>
                   <td>{item.phone}</td>
-                  <td style={{ display: "flex", justifyContent: "space-around" }}>
+                  <td className="actions">
                     <Link to={`/edit-user/${item.id}`}>
                       <i className="fa fa-pencil" aria-hidden="true"></i>
                     </Link>

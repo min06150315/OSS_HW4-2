@@ -1,0 +1,10 @@
+.actions {
+    display: flex;
+    gap: 10px; /* 아이콘 사이의 간격 */
+    align-items: center; /* 세로 정렬 */
+  }
+  
+  .actions i {
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    font-size: 18px; /* 아이콘 크기 */
+  }
